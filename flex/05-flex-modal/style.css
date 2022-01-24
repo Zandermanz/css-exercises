@@ -4,6 +4,7 @@ html, body {
   height: 100%;
 }
 
+/* The page as a whole with a message at it's center */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -15,13 +16,17 @@ body {
   justify-content: center;
 }
 
+/* The overall box to house the message, hard coded width*/
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 8px;
 }
 
+/* An explanation point formatted to have a blue circle around it. */
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,8 +38,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 16px;
 }
 
+/* An x formatted to look line a normal close X */
 .close-button {
   background: #eee;
   border-radius: 50%;
@@ -46,21 +53,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  float: right;
 }
 
+/* Formatting for all buttons */
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin: 8px;
 }
 
+/* Formatting for buttons containing a subclass continue */
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
+/* Formatting for buttons containing a subclass cancel*/
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+
+/* My additions below here */
+.header{
+  margin: 8px;
+}
+
+.text{
+  margin: 8px;
+}
+
+.right{
+  gap: 8px;
+}
+
